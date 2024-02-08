@@ -22,19 +22,6 @@ const loginFormHandler = async (event) => {
   }
 };
 
-const logout = async () => {
-  const response = await fetch('/api/users/logout', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-  });
-
-  if (response.ok) {
-    document.location.replace('/');
-  } else {
-    alert(response.statusText);
-  }
-};
-
 const signupFormHandler = async (event) => {
   event.preventDefault();
 
@@ -61,10 +48,3 @@ document
   .querySelector('.login-form')
   .addEventListener('submit', loginFormHandler);
 
-document
-  .querySelector('#logout')
-  .addEventListener('click', logout);
-  
-document
-  .querySelector('.signup-form')
-  .addEventListener('submit', signupFormHandler);
