@@ -1,34 +1,62 @@
 # tech_blog14
-GIVEN a CMS-style blog site
-WHEN I visit the site for the first time
-THEN I am presented with the homepage, which includes existing blog posts if any have been posted; navigation links for the homepage and the dashboard; and the option to log in
-WHEN I click on the homepage option
-THEN I am taken to the homepage
-WHEN I click on any other links in the navigation
-THEN I am prompted to either sign up or sign in
-WHEN I choose to sign up
-THEN I am prompted to create a username and password
-WHEN I click on the sign-up button
-THEN my user credentials are saved and I am logged into the site
-WHEN I revisit the site at a later time and choose to sign in
-THEN I am prompted to enter my username and password
-WHEN I am signed in to the site
-THEN I see navigation links for the homepage, the dashboard, and the option to log out
-WHEN I click on the homepage option in the navigation
-THEN I am taken to the homepage and presented with existing blog posts that include the post title and the date created
-WHEN I click on an existing blog post
-THEN I am presented with the post title, contents, post creator’s username, and date created for that post and have the option to leave a comment
-WHEN I enter a comment and click on the submit button while signed in
-THEN the comment is saved and the post is updated to display the comment, the comment creator’s username, and the date created
-WHEN I click on the dashboard option in the navigation
-THEN I am taken to the dashboard and presented with any blog posts I have already created and the option to add a new blog post
-WHEN I click on the button to add a new blog post
-THEN I am prompted to enter both a title and contents for my blog post
-WHEN I click on the button to create a new blog post
-THEN the title and contents of my post are saved and I am taken back to an updated dashboard with my new blog post
-WHEN I click on one of my existing posts in the dashboard
-THEN I am able to delete or update my post and taken back to an updated dashboard
-WHEN I click on the logout option in the navigation
-THEN I am signed out of the site
-WHEN I am idle on the site for more than a set time
-THEN I am able to view posts and comments but I am prompted to log in again before I can add, update, or delete posts
+
+## Table of Contents
+
+- [Description](#description)
+- [Features](#features)
+- [User Flow](#user-flow)
+- [Installation](#installation)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Description
+
+tech_blog14 is a CMS-style blog site designed for users who want to create, view, update, and delete blog posts. It features user authentication, commenting on blog posts, and session management. This platform is ideal for individuals seeking to share their thoughts, projects, or any content that benefits from a blog format, providing a seamless user experience from signing up to managing and interacting with content.
+
+## Features
+
+- **User Authentication:** Secure sign-up and login process.
+- **Blog Post Management:** Create, view, update, and delete blog posts.
+- **Commenting:** Users can comment on blog posts to engage with content.
+- **Session Management:** Automatic session timeouts with prompts for re-login for idle users.
+- **Dashboard:** A personalized dashboard for managing user posts.
+
+## User Flow
+
+1. **First Visit:** Users are greeted with the homepage displaying existing blog posts, navigation links, and login options.
+2. **Sign-Up/Sign-In:** Navigation prompts new users to sign up or existing users to sign in.
+3. **Homepage Navigation:** Allows users to view blog posts with titles and creation dates.
+4. **Viewing Blog Posts:** Users can click on blog posts to see detailed contents, author information, and comments.
+5. **Commenting:** Signed-in users can leave comments on blog posts.
+6. **Dashboard Access:** Users can view their posts and have the option to add new ones.
+7. **Post Management:** Users can add, update, or delete their blog posts from the dashboard.
+8. **Logout:** Users can sign out via the navigation link.
+9. **Idle Session Handling:** Idle users are prompted to log in again for adding, updating, or deleting posts.
+
+## Installation
+
+To set up tech_blog14 locally, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Install necessary dependencies by running `npm install`.
+3. Configure your environment variables for database connections and session management.
+4. Initialize the database using the provided schema.
+5. Start the server with `npm start` and visit `http://localhost:3000` to access the site.
+
+## Contributing
+
+Contributions to tech_blog14 are welcome. Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature.
+3. Commit your changes with clear, descriptive messages.
+4. Push the branch to your fork.
+5. Submit a pull request against the main tech_blog14 repository.
+
+Please ensure your code adheres to the project's coding standards and passes all tests.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). Feel free to clone, modify, and use it as per the license conditions.
+
+
